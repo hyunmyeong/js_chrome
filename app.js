@@ -11,7 +11,7 @@ console.log(a/b);
 console.log("hello" + myName);
 
 //위에서 설정한 let의 변수를 바꿀 때 위와 같이 변수명만 쓰고 새로운 값을 넣기
-//let은 새롭게 처음으로 변수를 설정할 때 쓰기
+//let은 새롭게 처음으로 변수를 설정할 때 써야 함
 myName = "doyoung";
 
 console.log("your name is " + myName);
