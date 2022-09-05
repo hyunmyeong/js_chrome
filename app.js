@@ -1,3 +1,4 @@
+
 const a = 5;
 const b = 2;
 
@@ -15,3 +16,47 @@ console.log("hello" + myName);
 myName = "doyoung";
 
 console.log("your name is " + myName);
+
+const amIFat = true;
+console.log(amIFat);
+//true !=== "true"
+//null : 값(변수명)은 있지만 아무것도(값) 없다! => 비어있다 [null은 자연발생X]
+//undefined : 값(변수명)은 있지만 값이 아직 정의되지 않았다!
+
+//array
+const nonsense = [1, 2, "doyoung", true, 5, 'hello'];
+
+//배열에서 원하는 값 꺼내는 방법
+console.log(nonsense[2]);
+
+//배열에 값을 추가하는 방법
+nonsense.push("dongsung", "tigers");
+console.log(nonsense);
+
+
+//objects
+const playerName = "doyoung";
+const playerPoint = 5;
+const playerHandsome = true;
+const playerFat = "nope";
+
+const player = {
+    name : "doyoung",
+    point : 5,
+    handsome : true,
+    fat : "nope"
+};
+
+console.log(player);
+console.log(player.name);
+console.log(player["name"]);
+
+//objects 업데이트
+player.handsome = "cute";
+player.point = player.point + 48;
+console.log(player);
+//const는 변경을 할 수 없지만 (player 전체를 변경 할 수는 없다 ==> 에러 남), const player 안의 값을 변경하는 것은 가능
+
+//objects 추가
+player.lastName = "Kim";
+console.log(player);
