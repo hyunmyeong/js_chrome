@@ -60,3 +60,35 @@ console.log(player);
 //objects 추가
 player.lastName = "Kim";
 console.log(player);
+
+//데이터를 function에 보내는 법
+function sayHello(nameOfPerson, age){
+    console.log("Hello my name is " + nameOfPerson + ", and I'm " + age);
+}
+
+sayHello("doyoung", 20);
+sayHello("seokhwan", 24);
+
+function plus(a,b){
+    console.log(a+b);
+}
+
+plus(20,24);
+
+function divide(a,b){
+    console.log(a/b);
+}
+
+divide(98,20);
+
+//object 안의 function을 가져올 때는 92번 줄처럼 
+const kbo_player = {
+    name : "seokhwan",
+    sayHi : function(otherPersonsName){
+        console.log("hi!" + otherPersonsName + " nice!")
+    }
+}
+
+console.log(kbo_player)
+kbo_player.sayHi("lee");
+
