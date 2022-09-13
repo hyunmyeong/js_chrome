@@ -92,3 +92,42 @@ const kbo_player = {
 console.log(kbo_player)
 kbo_player.sayHi("lee");
 
+
+//prac + return
+const calculator ={
+    plus : function(a,b) {
+        return a+b;
+    },
+    minus : function(a,b) {
+        return a-b;
+    },
+    times : function(a,b) {
+        return a*b;
+    },
+    divide : function(a,b) {
+        return a/b;
+    },
+    power : function(a,b) {
+        return a**b;
+    }
+}
+
+const pulsResult = calculator.plus(2,3);
+const minusResult = calculator.minus(pulsResult,10);
+const timesResult = calculator.times(10,minusResult);
+const divideResult = calculator.divide(timesResult,pulsResult);
+const powerResult = calculator.power(divideResult,minusResult);
+//콘솔 창에 pulsResult등을 입력하면 값이 나옴
+
+
+const age = 23;
+function calculatorKrAge(ageOfForeigner) {
+    return ageOfForeigner + 2;
+}
+
+const krAge = calculatorKrAge(age);
+
+console.log(krAge);
+
+//console.log => 콘솔 창에 보여주는 방식
+//return => 결과 도출 + return 되는 순간 그 아래 코드는 나오지 않음!
