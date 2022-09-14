@@ -48,3 +48,34 @@ const kbo_player = {
 
 console.log(kbo_player)
 kbo_player.sayHi("haeyoung");
+
+5. 조건문
+if(condition) {
+    //condition === true
+    
+} else {
+    //condition === false
+}
+
+if(condition) {
+   
+} else if (other condition) {
+    
+} else {
+
+}
+
+&& => and  (a && b) => a와 b 모두 true일 때 -> true , 하나라도 다르면 false
+
+true && true === true
+false && true === false
+true && false === false
+false && false === false
+
+|| => or (a || b) => a와 b 중 하나라도 true일 때 -> true
+
+true || true === true
+true || false === true
+false || true === true
+false || false === false 
+

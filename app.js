@@ -131,3 +131,39 @@ console.log(krAge);
 
 //console.log => 콘솔 창에 보여주는 방식
 //return => 결과 도출 + return 되는 순간 그 아래 코드는 나오지 않음!
+
+//조건문
+const ageCheck = parseInt(prompt("몇살이세요?"));
+
+console.log(isNaN(ageCheck));
+//typeof => 해당 값의 타입을 알 수 있음
+//paeseInt => string -> number
+//NaN => Not a Number
+//isNaN() => 해당 값이 숫자인지 아닌지를 true / false 로 알려줌
+
+if(isNaN(ageCheck) || ageCheck < 0) {
+    console.log("나이를 입력해주세요");
+} else if (ageCheck < 18) {
+    console.log("애들은 가라");
+} else if (ageCheck >= 18 && ageCheck <= 50) {
+    console.log("마음껏 술 드십쇼")
+} else if (ageCheck > 50 && ageCheck <= 80) {
+    console.log("운동하시는 것이 건강에 좋습니다")
+} else if (ageCheck === 100) {
+    console.log("장수 비결이 뭔가요?")
+} else if (ageCheck > 80) {
+    console.log("하고싶은거 하세요")
+} 
+
+//&& => and  (a && b) => a와 b 모두 true일 때 -> true , 하나라도 다르면 false
+//|| => or (a || b) => a와 b 중 하나라도 true일 때 -> true
+
+// true || true === true
+// true || false === true
+// false || true === true
+// false || false === false 
+
+// true && true === true
+// false && true === false
+// true && false === false
+// false && false === false
