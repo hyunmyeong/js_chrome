@@ -2,44 +2,17 @@
 const h1 = document.querySelector(".hello h1");
 
 function handleTitleClick() {
-    h1.style.color = "red";
-}
 
-function handleMouseEnter() {
-    h1.innerText = "mouse is here!";
-}
+    // const clickedClass = "clicked"
+    // if (h1.classList.contains(clickedClass)) {
+    //     h1.classList.remove(clickedClass);
+    // } else {
+    //     h1.classList.add(clickedClass);
+    // }
 
-function handleMouseLeave() {
-    h1.innerText = "mouse is gone!";
-}
+    //===> toggle이 간단하게 스위치 역할을 함
 
-function handleWindowResize() {
-    document.body.style.backgroundColor = "tomato";
-}
-
-function handleWindowCopy() {
-    alert("copier!");
-}
-
-function handleWindowOffLine() {
-    alert("SOS no WIFI!");
-}
-
-function handleWindowOnLine() {
-    alert("WIFI GOOD!");
+    h1.classList.toggle("clicked");
 }
 
 h1.addEventListener("click", handleTitleClick);
-h1.addEventListener("mouseenter", handleMouseEnter);
-h1.addEventListener("mouseleave", handleMouseLeave);
-
-//===>
-
-// h1.onclick = handleTitleClick;
-// h1.onmouseenter = handleMouseEnter;
-// h1.onmouseleave = handleMouseLeave;
-
-window.addEventListener("resize", handleWindowResize);
-window.addEventListener("copy", handleWindowCopy);
-window.addEventListener("offline", handleWindowOffLine)
-window.addEventListener("online", handleWindowOnLine)
