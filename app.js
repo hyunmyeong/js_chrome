@@ -1,18 +1,21 @@
-// html element를 javascript로 가지고 오는 법
-const h1 = document.querySelector(".hello h1");
+// const loginForm = document.getElementById("login-form");
+// const loginInput = loginForm.querySelector("input");
+// const loginButton = loginForm.querySelector("button");
 
-function handleTitleClick() {
+const loginForm = document.querySelector("#login-form");
+const loginInput = document.querySelector("#login-form input");
 
-    // const clickedClass = "clicked"
-    // if (h1.classList.contains(clickedClass)) {
-    //     h1.classList.remove(clickedClass);
-    // } else {
-    //     h1.classList.add(clickedClass);
-    // }
+const link = document.querySelector("a");
 
-    //===> toggle이 간단하게 스위치 역할을 함
-
-    h1.classList.toggle("clicked");
+function onLoginSubmit(event) {
+    event.preventDefault();
+    console.log(loginInput.value);
 }
 
-h1.addEventListener("click", handleTitleClick);
+function handleLink(event) {
+    event.preventDefault();
+    alert("clicked!");
+}
+
+loginForm.addEventListener("submit", onLoginSubmit);
+link.addEventListener("click", handleLink);
