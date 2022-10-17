@@ -122,3 +122,11 @@ setTimeout(sayHello, 5000);
 
 padStart(원하는 길이, 추가할 string) => string의 앞쪽 부분에 문자 추가 (길이가 이미 원하는 길이이면 안나옴)
 padEnd(원하는 길이, 추가할 string) => string의 뒤쪽 부분에 문자 추가 (길이가 이미 원하는 길이이면 안나옴)
+
+
+10. Math module
+
+Math.random() => 0 ~ 1 사이의 랜덤한 숫자를 제공 (소수점 포함의 숫자)
+Math.round() => 소수점을 반올림한 숫자를 제공
+Math.ceil() => 소수점을 올림한 숫자를 제공
+Math.floor() => 소수점을 내림한 숫자를 제공

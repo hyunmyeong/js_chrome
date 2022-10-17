@@ -17,6 +17,6 @@ function getClock() {
 //일정 시간이 지난 후, 함수를 실행 setTimeout(실행하려는 함수, ms 시간)
 // setTimeout(sayHello, 5000);
 
-//getClock 함수를 바로 호출 => 1초 안기다리고 바로 실행 + setInterval로 1초마다 실행
+//getClock 함수를 바로 호출 => 1초 안기다리고 바로 실행 + setInterval로 1초마다 getClock 함수를 실행
 getClock()
 setInterval(getClock, 1000)
