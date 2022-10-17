@@ -96,3 +96,29 @@ localStorage.getItem("username"); => 의리
 
 localStorage.removeItem(key) => localStorage에서 key 값에 해당하는 value 값을 지울 때
 localStorage.removeItem("username"); => 사라짐
+
+
+8. 시간
+
+new Date() => 시간 관련 함수
+
+특정 시간마다 함수를 실행 setInterval(실행하려는 함수,ms 시간)
+setInterval(sayHello,5000);
+
+일정 시간이 지난 후, 함수를 실행 setTimeout(실행하려는 함수, ms 시간)
+setTimeout(sayHello, 5000);
+
+
+9. string의 길이를 늘려주고 싶을 떄
+
+길이가 1인 문자를 길이를 2로 늘려주고 앞에 문자를 추가할 때
+=> "1".padStart(2,"0")
+=> 01
+
+길이가 1인 문자를 길이를 2로 늘려주고 뒤에 문자를 추가할 때
+=> "1".padEnd(2,"0")
+=> 10
+
+
+padStart(원하는 길이, 추가할 string) => string의 앞쪽 부분에 문자 추가 (길이가 이미 원하는 길이이면 안나옴)
+padEnd(원하는 길이, 추가할 string) => string의 뒤쪽 부분에 문자 추가 (길이가 이미 원하는 길이이면 안나옴)
