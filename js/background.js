@@ -10,7 +10,6 @@ bgImage.src = `img/${chosenImage}`;
 //appendChild() => html 추가
 document.body.appendChild(bgImage);
 
-
 //html element 생성 
 //-> 이미지를 선택하고 src로 img 폴더 뒤에 추가 + chosenImage 
 //-> bgImage를 body에 append

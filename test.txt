@@ -130,3 +130,7 @@ Math.random() => 0 ~ 1 사이의 랜덤한 숫자를 제공 (소수점 포함의
 Math.round() => 소수점을 반올림한 숫자를 제공
 Math.ceil() => 소수점을 올림한 숫자를 제공
 Math.floor() => 소수점을 내림한 숫자를 제공
+
+11. JSON.stringify() 
+
+=> javascript object / array 등을 string으로 바꿔줌
