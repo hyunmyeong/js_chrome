@@ -134,3 +134,7 @@ Math.floor() => 소수점을 내림한 숫자를 제공
 11. JSON.stringify() 
 
 => javascript object / array 등을 string으로 바꿔줌
+
+12. JSON.parse()
+
+=> string을 array로 바꿔줌
