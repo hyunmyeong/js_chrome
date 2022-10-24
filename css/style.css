@@ -1,3 +1,69 @@
 .hidden {
     display: none;
 }
+
+.body {
+    text-align: center;
+}
+
+.login-input {
+    width: 160px;
+    height: 20px;
+    border-radius: 5px;
+}
+
+.login-btn {
+    width: 70px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+.clock {
+    font-size: 50px;
+}
+
+.todo-form {
+    size: 50px;
+}
+
+.todo-input {
+    width: 400px;
+    height: 25px;
+}
+
+.todo-list {
+    display: inline-block;
+    text-align: left;
+}
+
+.deletebtn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.quote-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.quote {
+    font-size: 18px;
+}
+
+.author {
+    font-size: 15px;
+}
+
+.weather-form {
+    text-align: right;
+    margin-top: auto;
+}
+
+.weather {
+    font-size: 20px;
+}
+
+.city {
+    font-size: 20px;
+}

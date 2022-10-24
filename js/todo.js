@@ -29,6 +29,9 @@ function paintToDo(newTodo) {
     const span = document.createElement("span");
     const button = document.createElement("button");
 
+    //createElement로 생성한 button에 className을 지정해 css작업
+    button.className = "deletebtn";
+
     button.innerText = "❌";
     button.addEventListener("click", deleteToDo);
 
